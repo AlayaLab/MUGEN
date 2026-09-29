@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "diffsynth"
+version = "2.0.2"
+description = "Enjoy the magic of Diffusion models!"
+authors = [{name = "ModelScope Team"}]
+license = {text = "Apache-2.0"}
+requires-python = ">=3.10.1"
+dependencies = [
+    "torch==2.6.0",
+    "torchvision==0.21.0",
+    "numpy==2.2.6",
+    "transformers==4.57.1",
+    "imageio==2.37.0",
+    "imageio-ffmpeg==0.6.0",
+    "safetensors==0.6.2",
+    "einops==0.8.1",
+    "sentencepiece==0.2.1",
+    "protobuf==6.32.0",
+    "ftfy==6.3.1",
+    "Pillow==11.3.0",
+    "tqdm>=4.67,<5",
+    "huggingface-hub>=0.34,<1",
+    "typing-extensions>=4.10",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+
+[tool.setuptools.packages.find]
+where = ["./"]
+include = ["diffsynth", "diffsynth.*"]
+
+[tool.setuptools]
+include-package-data = true

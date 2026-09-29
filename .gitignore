@@ -1,0 +1,26 @@
+__pycache__/
+*.py[cod]
+.env
+.venv/
+*.egg-info/
+model/scripts/inference/env_local.sh
+
+# Local testing and generated results (keep on disk, exclude from releases)
+tests/
+test_*.py
+*_test.py
+outputs/
+results/
+logs/
+*.log
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local caches, scratch files and environment overrides
+.cache/
+.ipynb_checkpoints/
+tmp/
+.DS_Store
+.env.*
+!.env.example

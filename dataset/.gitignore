@@ -1,0 +1,27 @@
+__pycache__/
+*.pyc
+/videos/
+/work/
+/mugen_urls.txt
+
+# Local tests and validation artifacts
+tests/
+test_*.py
+*_test.py
+outputs/
+results/
+logs/
+*.log
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Internal release preparation tools (kept locally)
+/tools/
+
+# Downloaded release annotations
+/mugen.csv
+/mugen-hq.csv
+
+# Internal annotation metadata (kept locally)
+/metadata/

@@ -1,0 +1,9 @@
+# Direct runtime dependencies verified with Python 3.12 on MUGEN samples.
+# FFmpeg, ffprobe and MKVToolNix are installed separately.
+--extra-index-url https://download.pytorch.org/whl/cu124
+torch==2.6.0+cu124
+numpy==2.2.6
+pycuda==2025.1.2
+cvcuda-cu12==0.15.0
+PyNvVideoCodec==2.0.2
+bitarray==3.7.1
